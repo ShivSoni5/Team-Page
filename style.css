@@ -76,10 +76,17 @@ body {
     font-size: 13px;
     position: absolute;
     top: 35px;
-    right: 0;
+    right: -5px;
     transform: rotate(90deg);
 }
 
 .team-member:nth-child(3n+2)>.designation {
-    top: 85px;
+    top: 85px !important;
+}
+
+.footer {
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #BDBDBD;
+    text-align: center;
 }
