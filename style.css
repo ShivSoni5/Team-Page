@@ -56,11 +56,6 @@ body {
     position: relative;
 }
 
-.team-member:nth-child(3n+2) {
-    padding-top: 52px !important;
-    padding-bottom: 0px !important;
-}
-
 .team-member img {
     max-width: 100%;
     max-height: 100%;
@@ -80,13 +75,56 @@ body {
     transform: rotate(90deg);
 }
 
-.team-member:nth-child(3n+2)>.designation {
-    top: 85px !important;
-}
-
 .footer {
     font-family: Montserrat;
     font-size: 13px;
     color: #BDBDBD;
     text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .team-member:nth-child(3n+2) {
+        padding-top: 52px !important;
+        padding-bottom: 0px !important;
+    }
+    .team-member:nth-child(3n+2)>.designation {
+        top: 85px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 50px 10px 5px 10px;
+    }
+    .heading-wrapper {
+        flex-direction: column;
+    }
+    .heading {
+        width: 100%;
+    }
+    .subtext-container {
+        padding: 20px 0 0;
+        width: 100%;
+    }
+    .team-member {
+        width: 28%;
+        height: auto;
+        padding: 0px 35px 35px 35px;
+        position: relative;
+    }
+    .name {
+        font-size: 12px;
+    }
+    .designation {
+        font-size: 11px;
+        right: -8px;
+        top: 30px;
+    }
+    .team-member:nth-child(even) {
+        padding-top: 52px !important;
+        padding-bottom: 0px !important;
+    }
+    .team-member:nth-child(even)>.designation {
+        top: 85px !important;
+    }
 }
