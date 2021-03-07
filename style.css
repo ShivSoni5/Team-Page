@@ -46,7 +46,7 @@ body {
 .teams-data {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 
 .team-member {
