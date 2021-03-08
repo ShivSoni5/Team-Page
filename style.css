@@ -22,12 +22,11 @@ body {
     font-family: 'PT Serif';
     font-weight: bold;
     font-size: 36px;
-    width: 50%;
+    flex: 1;
 }
 
 .subtext-container {
-    padding-left: 15%;
-    width: 50%;
+    flex: 1;
 }
 
 .subtext-title {
@@ -46,7 +45,7 @@ body {
 .teams-data {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0px;
+    padding: 50px 0px;
 }
 
 .team-member {
@@ -71,8 +70,9 @@ body {
     font-size: 13px;
     position: absolute;
     top: 35px;
-    right: -5px;
+    right: -3px;
     transform: rotate(90deg);
+    width: 85px;
 }
 
 .footer {
@@ -84,11 +84,8 @@ body {
 
 @media only screen and (min-width: 600px) {
     .team-member:nth-child(3n+2) {
-        padding-top: 52px !important;
+        margin-top: 52px !important;
         padding-bottom: 0px !important;
-    }
-    .team-member:nth-child(3n+2)>.designation {
-        top: 85px !important;
     }
 }
 
@@ -104,7 +101,6 @@ body {
     }
     .subtext-container {
         padding: 20px 0 0;
-        width: 100%;
     }
     .team-member {
         width: 28%;
@@ -117,14 +113,13 @@ body {
     }
     .designation {
         font-size: 11px;
-        right: -8px;
-        top: 30px;
+        right: -15px;
     }
     .team-member:nth-child(even) {
-        padding-top: 52px !important;
+        margin-top: 52px !important;
         padding-bottom: 0px !important;
     }
-    .team-member:nth-child(even)>.designation {
-        top: 85px !important;
+    .footer {
+        font-size: 10px;
     }
 }
